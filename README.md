@@ -3,6 +3,8 @@ An application that shows events in the Georgia Tech area. Users can make an acc
 
 Built on Electron using ReactJS. Server is built using ExpressJS.
 
+Made for CS 2340 at the Georgia Institute of Technology.
+
 ## Demos
 - [FINAL Demo Video (Campus Map)](https://youtu.be/fw_dGZxN3C4)
 - [Sprint 3 Demo Video (RSVPs)](https://youtu.be/Mpbncz2ln1o)

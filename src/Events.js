@@ -97,7 +97,7 @@ class Events extends React.Component {
                     {this.state.nextPage && <span className="events-list_pagenav" onClick={() => this.cyclePage(1)} style={{ top: 0, right: 0 }}>&gt;</span>}
                     {this.state.prevPage && <span className="events-list_pagenav" onClick={() => this.cyclePage(-1)} style={{ top: 0, left: 0 }}>&lt;</span>}
                 </div>
-                {this.state.eventInfo && this.state.eventInfo}
+                {this.state.eventInfoo}
             </div>
         );
         return (

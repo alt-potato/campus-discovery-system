@@ -63,7 +63,7 @@ class Map extends Component {
                     {this.state.events && <CampusMap key={this.state.events.length} events={this.state.events} show={this.showEvent} />}
                 </div>
                 <Button clickHandler={this.editFilters} className="filters-button">FILTER</Button>
-                {this.state.eventInfo && this.state.eventInfo}
+                {this.state.eventInfo}
             </div>
         );
         return (

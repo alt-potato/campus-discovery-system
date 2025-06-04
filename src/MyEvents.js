@@ -103,7 +103,7 @@ class MyEvents extends Component {
                     <p className="rsvp-category" style={{ color: '#BF0000' }}>Not going {this.state.rsvps.notgoing.length}</p>
                     {this.state.rsvps.notgoing}
                 </div>
-                {this.state.eventInfo && this.state.eventInfo}
+                {this.state.eventInfo}
             </div>
         );
         return (

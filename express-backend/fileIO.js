@@ -6,19 +6,28 @@ class FileIO {
         this.file = path.join(__dirname, relPath);
         this.json = initJSON;
         const storageDir = path.join(__dirname, 'storage');
+
+        // create storage dir if does not exist
         if (!fs.existsSync(storageDir)) {
             console.log(this.file + ' does not exist!\nCreating the file...');
             fs.mkdirSync(storageDir);
-        } else {
-            if (!fs.existsSync(this.file)) {
-                this.updateFile();
-            }
-            this.readFile();
+        } 
+
+        // create file if does not exist
+        if (!fs.existsSync(this.file)) {
+            this.updateFile();
         }
+        this.readFile();
     }
 
     updateFile = function() {
-        fs.writeFileSync(this.file, JSON.stringify(this.json));
+        fs.writeFileSync(this.file, JSON.stringify(this.json), (err) => {
+            if (err) {
+                console.error(err);
+            } else {
+                console.log('File created successfully.');
+            }
+        });
     }
 
     readFile = function() {

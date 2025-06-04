@@ -28,7 +28,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-server": "nodemon --exec \"node express-backend/server.js\"",
-    "start-dev": "concurrently \"cross-env BROWSER=none npm start\" \"npm run start-server\" \"wait-on http://localhost:3000 && electron .\""
+    "start-dev": "concurrently \"cross-env BROWSER=none npm start\" \"npm run start-server\" \"wait-on http://localhost:3000 && electron .\"",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "nodemonConfig": {
     "ignore": [
